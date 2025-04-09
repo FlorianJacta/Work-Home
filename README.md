@@ -16,7 +16,9 @@ WORK-HOME/
 │   │   └── volume_spoiler.vtu
 │   ├── visualization.py         # Script to visualize 3D data
 │   └── compute_surface.py       # Script to project volume data onto surface and compute drag
+├── SimAI_Case_Study.ipynb # Notebook answering technical questions
 ├── requirements.txt             # Python dependencies
+├── WorkHome_Product_Specialist.pdf # PDF encapsulating the Work@Home and questions
 ├── installation.md              # Setup instructions
 ├── README.md                    # This file
 └── slides/                      # Optional: Slide decks for each problem
