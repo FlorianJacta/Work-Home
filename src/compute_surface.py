@@ -1,6 +1,7 @@
 import pyvista as pv
 import numpy as np
 from pathlib import Path
+import os
 
 # Get the directory where the script is located
 script_dir = Path(__file__).resolve().parent
@@ -15,12 +16,15 @@ output_path = data_dir / "surface_car_with_vars.vtp"
 volume = pv.read(volume_path)
 surface = pv.read(surface_path)
 
-# Interpolate volume scalars onto the surface points
-interpolated_surface = surface.sample(volume)
+if not os.path.exists(output_path):
+    # Interpolate volume scalars onto the surface points
+    interpolated_surface = surface.sample(volume)
 
-# Save the new surface mesh with interpolated fields
-interpolated_surface.save(output_path)
-print(f"Surface file with projected variables saved to: {output_path}")
+    # Save the new surface mesh with interpolated fields
+    interpolated_surface.save(output_path)
+    print(f"Surface file with projected variables saved to: {output_path}")
+else:
+    interpolated_surface = pv.read(output_path)
 
 # Compute drag (sum of pressure + wall_shear across all surface nodes)
 # Make sure both fields exist
@@ -38,3 +42,10 @@ drag_values = pressure + wall_shear
 # Estimate drag as the total sum (approximation)
 estimated_drag = np.sum(drag_values)
 print(f"Estimated Drag (approximated by sum of values): {estimated_drag:.4f}")
+
+
+# Visualize the pressure
+interpolated_surface.plot(
+    scalars="pressure",
+    show_scalar_bar=True,
+)

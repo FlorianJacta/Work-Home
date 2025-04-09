@@ -15,8 +15,9 @@ volume_spoiler_path = data_dir / "volume_spoiler.vtu"
 # Load and plot the car surface
 surface_car = pv.read(surface_car_path)
 surface_car.plot(
-    scalars=None,
-    show_edges=True,
+    scalars="wall_shear",
+    cmap="coolwarm",
+    clim=[0, 10],
 )
 
 # Load and plot the car volume
@@ -29,8 +30,8 @@ volume_car.plot(
 # Load and plot the spoiler surface
 surface_spoiler = pv.read(surface_spoiler_path)
 surface_spoiler.plot(
-    scalars=None,
-    show_edges=True,
+    scalars="wall_shear",
+    cmap="coolwarm",
 )
 
 # Load and plot the spoiler volume
