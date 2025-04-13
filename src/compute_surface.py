@@ -37,12 +37,20 @@ else:
     wall_shear = interpolated_surface["wall_shear"]
 
 pressure = interpolated_surface["pressure"]
-drag_values = pressure + wall_shear
 
-# Estimate drag as the total sum (approximation)
-estimated_drag = np.sum(drag_values)
+
+# Convert point data to celle data
+new_surface = interpolated_surface.point_data_to_cell_data().compute_cell_sizes(
+    length=False, volume=False
+)
+
+
+pressure = new_surface.cell_data["pressure"]
+wall_shear = new_surface.cell_data["wall_shear"]
+area = new_surface.cell_data["Area"]
+
+estimated_drag = np.sum((pressure + wall_shear) * area)
 print(f"Estimated Drag (approximated by sum of values): {estimated_drag:.4f}")
-
 
 # Visualize the pressure
 interpolated_surface.plot(

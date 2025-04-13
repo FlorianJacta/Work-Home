@@ -27,6 +27,7 @@ volume_car.plot(
     cmap="coolwarm",
 )
 
+
 # Load and plot the spoiler surface
 surface_spoiler = pv.read(surface_spoiler_path)
 surface_spoiler.plot(
