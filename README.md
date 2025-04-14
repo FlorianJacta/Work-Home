@@ -21,11 +21,9 @@ WORK-HOME/
 ├── WorkHome_Product_Specialist.pdf # PDF encapsulating the Work@Home and questions
 ├── installation.md              # Setup instructions
 ├── README.md                    # This file
-└── slides/                      # Optional: Slide decks for each problem
-    ├── problem_1_pyvista.pdf
-    ├── problem_2_projection.pdf
-    ├── problem_3_simai_dl.pdf
-    └── problem_4_optimization.pdf
+└── slides/                      # Slide decks
+    ├── Introduction to PyVista.pptx
+    └── SimAI introduction.pptx
 ```
 
 ---
@@ -74,10 +72,10 @@ python src/compute_surface.py
 **Answer:**
 - SimAI uses AI models (like 3D CNNs or GNNs) to predict physics fields.
 - It reduces simulation times from hours to seconds.
-- Suitable models: 3D U-Nets, GNNs, PointNet++.
+- Suitable models: 3D CNN, GNNs, PointNet++.
 - SimAI bridges physical laws and AI for fast, accurate simulation predictions.
 
-See the presentation in `slides/problem_3_simai_dl.pdf`
+See the presentation in `slides/SimAI introduction.pptx`
 
 ---
 
@@ -92,7 +90,7 @@ Recommended Workflow:
 - Predict drag using SimAI.
 - Use Bayesian Optimization to find the best design.
 
-Details in `slides/problem_4_optimization.pdf`
+Details in `slides/SimAI introduction.pptx`
 
 ---
 
