@@ -39,7 +39,7 @@ else:
 pressure = interpolated_surface["pressure"]
 
 
-# Convert point data to celle data
+# Convert point data to cell data
 new_surface = interpolated_surface.point_data_to_cell_data().compute_cell_sizes(
     length=False, volume=False
 )
