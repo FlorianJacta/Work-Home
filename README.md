@@ -4,7 +4,7 @@ This project is a solution to a Product Specialist case study based on the SimAI
 
 ---
 
-## 🚀 Project Structure
+## Project Structure
 
 ```
 WORK-HOME/
