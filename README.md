@@ -14,14 +14,14 @@ WORK-HOME/
 │   │   ├── surface_spoiler.vtp
 │   │   ├── volume_car.vtp
 │   │   └── volume_spoiler.vtu
-│   ├── visualization.py         # Script to visualize 3D data
-│   └── compute_surface.py       # Script to project volume data onto surface and compute drag
-├── SimAI_Case_Study.ipynb # Notebook answering technical questions
-├── requirements.txt             # Python dependencies
+│   ├── visualization.py            # Script to visualize 3D data
+│   └── compute_surface.py          # Script to project volume data onto surface and compute drag
+├── SimAI_Case_Study.ipynb          # Notebook answering technical questions
+├── requirements.txt                # Python dependencies
 ├── WorkHome_Product_Specialist.pdf # PDF encapsulating the Work@Home and questions
-├── installation.md              # Setup instructions
-├── README.md                    # This file
-└── slides/                      # Slide decks
+├── installation.md                 # Setup instructions
+├── README.md                       # This file
+└── slides/                         # Slide decks
     ├── Introduction to PyVista.pptx
     └── SimAI introduction.pptx
 ```
