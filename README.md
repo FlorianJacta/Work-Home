@@ -96,7 +96,7 @@ Details in `slides/problem_4_optimization.pdf`
 
 ---
 
-## ❓ FAQ
+## FAQ
 
 **Q: Can I run the scripts from the root folder?**
 Yes. Both scripts handle relative paths using `os.path` and can be executed from root or `src`.
@@ -112,8 +112,6 @@ Not for this part of the project. Only CPU is needed for visualization and proje
 
 ---
 
-## 📬 Contact
+## Contact
 Prepared for Ansys - SimAI by Florian.
-
-Let's discuss it together in the next interview! ✨
 
