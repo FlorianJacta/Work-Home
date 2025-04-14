@@ -83,7 +83,7 @@ See the presentation in `slides/SimAI introduction.pptx`
 
 **Question:** How can the customer optimize the spoiler’s shape and position to reduce drag?
 
-**Solution:** Use SimAI for rapid predictions in a loop driven by an optimization engine (e.g., Optuna or BoTorch).
+**Solution:** Use SimAI for rapid predictions in a loop driven by an optimization engine.
 
 Recommended Workflow:
 - Generate design variants.
