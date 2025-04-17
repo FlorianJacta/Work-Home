@@ -22,8 +22,8 @@ WORK-HOME/
 ├── installation.md                 # Setup instructions
 ├── README.md                       # This file
 └── slides/                         # Slide decks
-    ├── Introduction to PyVista.pptx
-    └── SimAI introduction.pptx
+    ├── Introduction to PyVista.pdf
+    └── SimAI introduction.pdf
 ```
 
 ---
@@ -75,7 +75,7 @@ python src/compute_surface.py
 - Suitable models: 3D CNN, GNNs, PointNet++.
 - SimAI bridges physical laws and AI for fast, accurate simulation predictions.
 
-See the presentation in `slides/SimAI introduction.pptx`
+See the presentation in `slides/SimAI introduction.pdf`
 
 ---
 
@@ -90,7 +90,7 @@ Recommended Workflow:
 - Predict drag using SimAI.
 - Use Bayesian Optimization to find the best design.
 
-Details in `slides/SimAI introduction.pptx`
+Details in `slides/SimAI introduction.pdf`
 
 ---
 
